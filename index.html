@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Анкета</title>
+    <link rel="stylesheet" href="./menu.css">
 </head>
 <body>
-    <h1>fstreygdhfg</h1>
+    <section>
+<div class="NameForm">
+    <h2>Оставьте заявку</h2>
+    <label for="name">
+        Имя:
+        <input type="text" id="name">
+    </label>
+    <label for="countryS">
+        Страна:
+        <select name="country" id="countryS" oninput="codeCountry()">
+            <option value="none">Выберите страну</option>
+            <option value="uz">Узбекистан</option>
+            <option value="ru">Россия</option>
+            <option value="usa">США</option>
+        </select>
+    </label>
+    <label for="phone">
+        Телефон:
+        <input type="tel" id="phone" name="phone">
+    </label>
+    <label for="dataConsent">
+        <input type="checkbox" id="dataConsent" onchange="toggleSubmitButton()">
+        Подтвердите обработку данных
+    </label>
+    <input type="button" id="submitButton" disabled value="Отправить">
+</div>
+
+       
+       
+       
+       
+        <div id="CalcForm">
+            <h2>Калькулятор стоимости обучения</h2>
+            <label for="">Курс:
+                <select>
+                    <option value="none">Выберите курс</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Python">Python</option>
+                    <option value="DATA">Дата аналитика</option>
+                </select>
+            </label>
+            <label for="">
+                Скидка:
+                <input type="range" min="0" max="50" step="5">
+                <samp>0%</samp>
+            </label>
+            <label for="">
+                Сумма:
+                <input type="text">
+            </label>
+        </div>
+
+    </section>
+
+
+
+
+<script src="./menu.js"></script>
+
 </body>
 </html>
