@@ -39,26 +39,26 @@
        
        
        
-        <div id="CalcForm">
-            <h2>Калькулятор стоимости обучения</h2>
-            <label for="">Курс:
-                <select>
-                    <option value="none">Выберите курс</option>
-                    <option value="Frontend">Frontend</option>
-                    <option value="Python">Python</option>
-                    <option value="DATA">Дата аналитика</option>
-                </select>
-            </label>
-            <label for="">
-                Скидка:
-                <input type="range" min="0" max="50" step="5">
-                <samp>0%</samp>
-            </label>
-            <label for="">
-                Сумма:
-                <input type="text">
-            </label>
-        </div>
+<div id="CalcForm">
+    <h2>Калькулятор стоимости обучения</h2>
+    <label for=>Курс:
+        <select id="courseSelect">
+            <option value="none">Выберите курс</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Python">Python</option>
+            <option value="DATA">Дата аналитика</option>
+        </select>
+    </label>
+    <label for=>
+        Скидка:
+        <input type="range" id="discountRange" min="0" max="40" step="5">
+        <samp id="discountValue">0%</samp>
+    </label>
+    <label for=>
+        Сумма:
+        <input id="sumValue" readonly>
+    </label>
+</div>
 
     </section>
 
